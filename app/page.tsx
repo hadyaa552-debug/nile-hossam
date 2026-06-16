@@ -6,7 +6,7 @@ import{useRouter}from"next/navigation";
 const P="01020067990",PD="0102 006 7990",PI="+201020067990",WN="201020067990";
 const WM="مرحباً، أريد الاستفسار عن ريفر ديستريكت العاصمة الإدارية من النيل — River District Nile Developments";
 const WU=`https://wa.me/${WN}?text=${encodeURIComponent(WM)}`;
-const WK="PASTE_WEB3FORMS_KEY_HERE";
+const WK="9e735802-47b3-4573-ba78-ac61b583cc85";
 
 /* ═══ TRACKING PLACEHOLDERS ═══ */
 function trackCall(l="call"){if(typeof window!=="undefined"&&(window as any).gtag)(window as any).gtag("event","click_call",{event_category:"contact",event_label:l});}
