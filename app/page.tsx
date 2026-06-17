@@ -6,11 +6,11 @@ import{useRouter}from"next/navigation";
 const P="01020067990",PD="0102 006 7990",PI="+201020067990",WN="201020067990";
 const WM="مرحباً، أريد الاستفسار عن ريفر ديستريكت العاصمة الإدارية من النيل — River District Nile Developments";
 const WU=`https://wa.me/${WN}?text=${encodeURIComponent(WM)}`;
-const WK="9e735802-47b3-4573-ba78-ac61b583cc85";
+const WK="PASTE_WEB3FORMS_KEY_HERE";
 
 /* ═══ TRACKING PLACEHOLDERS ═══ */
-function trackCall(l="call"){if(typeof window!=="undefined"&&(window as any).gtag)(window as any).gtag("event","click_call",{event_category:"contact",event_label:l});}
-function trackWA(l="wa"){if(typeof window!=="undefined"&&(window as any).gtag)(window as any).gtag("event","click_whatsapp",{event_category:"contact",event_label:l});}
+function trackCall(l="call"){if(typeof window==="undefined")return;const w=window as any;if(w.gtag)w.gtag("event","conversion",{send_to:"AW-17039137293/i6StCNbk2cAcEI208rw_",value:1.0,currency:"USD",event_callback:()=>{}});}
+function trackWA(l="wa"){if(typeof window==="undefined")return;const w=window as any;if(w.gtag)w.gtag("event","conversion",{send_to:"AW-17039137293/vy1mCNPk2cAcEI208rw_",value:1.0,currency:"USD",event_callback:()=>{}});}
 function trackLead(l="form"){if(typeof window!=="undefined"&&(window as any).gtag)(window as any).gtag("event","generate_lead",{event_category:"lead",event_label:l});}
 
 /* ═══ IMAGES ═══ */
